@@ -1,0 +1,179 @@
+body {
+    background-color: white;
+    color: black;
+    font-family: sans-serif;
+    transition: background-color 0.5s;
+  }
+  
+  a {
+    color: blue;
+    font-size: 50px;
+    transition: font-size 0.5s, outline 0.3s;
+  }
+  
+  a:hover {font-size: 100px;}
+  a:active {color: red;}
+  a:visited {color: purple;}
+  
+  a:focus {
+    outline: 15px solid blue; 
+    outline-offset: 5px;
+    margin: 20px;
+  }
+  
+  #theme-toggle {
+      position: absolute;
+      top: 25px;
+      left: calc(100vw - 100px);
+      width: 80px;
+      height: 50px;
+      border-radius: 100%;
+      background-color: #eee;
+      text-transform: uppercase;
+    }
+
+
+
+  @media (prefers-color-scheme: dark) {
+    body {
+      background-color: black;
+      color: white;
+    }
+    
+    a {color: lightblue;}
+    a:hover {font-size: 200px;}
+    a:active {color: #ff4444;}
+    a:visited {color: #933393;}
+    
+    a:focus {
+    outline: 15px solid #4444ff; 
+    outline-offset: 5px;
+    margin: 20px;
+  }
+    
+    #theme-toggle {
+      width: 80px;
+      height: 50px;
+      border-radius: 100%;
+      background-color: darkgray;
+      color: white;
+    }
+    
+
+
+    
+  #buggy-credits {color: lightblue;}
+    #buggy-credits:hover {font-size: 200px;}
+    #buggy-credits:active {color: #ff4444;}
+    #buggy-credits:visited {color: #933393;}
+    
+    #buggy-credits:focus {
+    outline: 905px solid #4444ff; 
+    outline-offset: 5px;
+    margin: 20px;
+  }
+
+
+    
+  }
+  
+  
+  
+  body.dark {
+      background-color: black;
+      color: white;
+    }
+    
+  body.dark a {color: #4444ff;}
+    body.dark a:active {color: #ff4444;}
+    body.dark a:visited {color: #933393;}
+  
+  body.dark a:focus {
+    outline: 15px solid #4444ff; 
+    outline-offset: 5px;
+    margin: 20px;
+  }
+    
+    body.dark #theme-toggle {
+      width: 80px;
+      height: 50px;
+      border-radius: 100%;
+      background-color: gray;
+      color: white;
+    }
+  
+
+
+
+
+
+#buggy-credits {
+  color: lightblue;
+  transition: font-size 0.5s, outline 0.7s;
+}
+    #buggy-credits:hover {font-size: 20px;}
+    #buggy-credits:active {color: #ff4444;}
+    #buggy-credits:visited {color: #933393;}
+    
+    #buggy-credits:focus {
+    outline: 905px solid #4444ff; 
+    outline-offset: 5px;
+    margin: 20px;
+  }
+
+
+@media (prefers-color-scheme: dark) {
+
+  #buggy-credits {color: lightblue;}
+    #buggy-credits:hover {font-size: 200px;}
+    #buggy-credits:active {color: #ff4444;}
+    #buggy-credits:visited {color: #933393;}
+    
+    #buggy-credits:focus {
+    outline: 905px solid #4444ff; 
+    outline-offset: 5px;
+    margin: 20px;
+  }
+
+
+    
+  }
+
+
+
+
+@keyframes bug-span {
+  0% {
+    font-size: 15px;
+  }
+  50% {
+    font-size: 20px;
+  }
+  100% {
+    font-size: 30px;
+  }
+}
+
+#bug-span {
+  animation-delay: 0s;
+  animation-duration: 0.3s;
+  animation-iteration-count: 999999;
+  animation-name: bug-span;
+}
+
+#theme-toggle {
+  box-shadow: 0px 0px 25px 15px transparent;
+  transition: box-shadow 0.2s;
+}
+
+#theme-toggle:focus {
+  box-shadow: 0px 0px 25px 15px red;
+  outline-width: 0;
+}
+
+
+
+
+.normal-font {
+  font-size: 15px;
+}
